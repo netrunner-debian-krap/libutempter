@@ -1,0 +1,26 @@
+#!/bin/sh
+# postinst script for libutempter
+
+set -e
+
+case "$1" in
+    configure)
+        grep -q utempter /etc/group || ( echo "Creating utempter group..." ; addgroup --quiet --system utempter)
+        chmod 710 /usr/lib/utempter
+        chown root:utempter /usr/lib/utempter
+        chmod 2711 /usr/lib/utempter/utempter
+        chown root:utmp /usr/lib/utempter/utempter
+    ;;
+
+    abort-upgrade|abort-remove|abort-deconfigure)
+    ;;
+
+    *)
+        echo "postinst called with unknown argument \`$1'" >&2
+        exit 1
+    ;;
+esac
+
+#DEBHELPER#
+
+exit 0

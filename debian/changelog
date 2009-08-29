@@ -1,3 +1,11 @@
+libutempter (1.1.5-2) unstable; urgency=low
+
+  * Update debian/control:
+    - Add dependency on adduser to libutempter0.
+    - Bump Standards-Version to 3.8.3 (no changes needed).
+
+ -- Fathi Boudra <fabo@debian.org>  Sat, 29 Aug 2009 09:52:07 +0200
+
 libutempter (1.1.5-1) unstable; urgency=low
 
   * Initial release. (Closes: #541021)

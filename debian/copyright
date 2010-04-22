@@ -37,7 +37,7 @@ Public License can be found in:
 
 The Debian packaging is:
 
-    Copyright (C) 2009 Fathi Boudra <fabo@debian.org>
+    Copyright (C) 2009-2010 Fathi Boudra <fabo@debian.org>
 
 and is licensed under the GPL version 2.1 or any later version, 
 see `/usr/share/common-licenses/GPL-3'.

@@ -1,3 +1,19 @@
+libutempter (1.1.5-3) unstable; urgency=low
+
+  * Switch to dpkg-source 3.0 (quilt) format.
+  * Update debian/control:
+    - Bump debhelper build dependency version to 7.4.15.
+    - Bump Standards-Version to 3.8.3 (no changes needed).
+  * Update debian/rules:
+    - Enable parallel build (pass --parallel option to dh).
+    - List missing files (pass --list-missing to dh).
+    - Call chown before chmod.
+    - Change utempter permissions to world-readable (2755). (Closes: #573015)
+  * Update debian/libutempter0.lintian-overrides file.
+  * Add debian/libutempter0.symbols file.
+
+ -- Fathi Boudra <fabo@debian.org>  Thu, 22 Apr 2010 14:19:47 +0300
+
 libutempter (1.1.5-2) unstable; urgency=low
 
   * Update debian/control:

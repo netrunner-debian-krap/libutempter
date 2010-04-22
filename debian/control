@@ -2,8 +2,8 @@ Source: libutempter
 Priority: optional
 Maintainer: Debian Krap Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Fathi Boudra <fabo@debian.org>
-Build-Depends: debhelper (>= 7.0.50~)
-Standards-Version: 3.8.3
+Build-Depends: debhelper (>= 7.4.15)
+Standards-Version: 3.8.4
 Section: libs
 Homepage: http://freshmeat.net/projects/libutempter
 
@@ -19,7 +19,6 @@ Description: A privileged helper for utmp/wtmp updates (development)
  utempter-based software.
 
 Package: libutempter0
-Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, adduser
 Description: A privileged helper for utmp/wtmp updates (runtime)

@@ -1,0 +1,16 @@
+Description: Don't overwrite build flags from the environment.
+Author: Felix Geyer <fgeyer@debian.org>
+
+--- a/Makefile
++++ b/Makefile
+@@ -42,8 +42,8 @@
+ 	-Wmissing-format-attribute -Wmissing-noreturn \
+ 	-Wmissing-prototypes -Wpointer-arith -Wredundant-decls \
+ 	-Wshadow -Wstrict-prototypes -Wwrite-strings
+-CPPFLAGS = -std=gnu99 $(WARNINGS) -DLIBEXECDIR=\"$(libexecdir)\"
+-CFLAGS = $(RPM_OPT_FLAGS)
++CPPFLAGS += -std=gnu99 $(WARNINGS) -DLIBEXECDIR=\"$(libexecdir)\"
++CFLAGS += $(RPM_OPT_FLAGS)
+ LDLIBS =
+ 
+ all: $(TARGETS)

@@ -1,3 +1,10 @@
+libutempter (1.1.5-5) UNRELEASED; urgency=medium
+
+  * Switch to debhelper compat level 9.
+    - Exports build flags.
+
+ -- Felix Geyer <fgeyer@debian.org>  Thu, 28 May 2015 18:23:38 +0200
+
 libutempter (1.1.5-4) unstable; urgency=low
 
   * Use getent instead of grep /etc/group. (Closes: #614258)

@@ -6,6 +6,8 @@ Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.1
 Section: libs
 Homepage: http://freshmeat.net/projects/libutempter
+Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-req/qca2.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-kde/krap/libutempter.git/
 
 Package: libutempter-dev
 Section: libdevel

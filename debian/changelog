@@ -8,6 +8,7 @@ libutempter (1.1.6-1) UNRELEASED; urgency=medium
   * Add a watch file, thanks to David Gilman. (Closes: #747483)
   * Add Vcs-* control fields.
   * Don't hardcode the delgroup path.
+  * Improve package descriptions.
 
  -- Felix Geyer <fgeyer@debian.org>  Thu, 28 May 2015 18:23:38 +0200
 

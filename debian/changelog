@@ -4,6 +4,7 @@ libutempter (1.1.5-5) UNRELEASED; urgency=medium
     - Exports build flags.
   * Don't overwrite build flags from the environment in the Makefile.
     - Add Add keep_env_build_flags.diff
+  * Add a watch file, thanks to David Gilman. (Closes: #747483)
 
  -- Felix Geyer <fgeyer@debian.org>  Thu, 28 May 2015 18:23:38 +0200
 

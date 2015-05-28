@@ -5,9 +5,11 @@ set -e
 
 case "$1" in
     purge)
-        if [ -x /usr/sbin/delgroup ]; then
+        if [ -x "$(command -v deluser)" ]; then
             echo "Deleting utempter group..."
             delgroup --quiet --system utempter > /dev/null || true
+        else
+            echo >&2 "not removing utempter system group because the deluser command was not found"
         fi
     ;;
 

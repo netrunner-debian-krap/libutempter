@@ -7,6 +7,7 @@ libutempter (1.1.6-1) UNRELEASED; urgency=medium
     - Add Add keep_env_build_flags.diff
   * Add a watch file, thanks to David Gilman. (Closes: #747483)
   * Add Vcs-* control fields.
+  * Don't hardcode the delgroup path.
 
  -- Felix Geyer <fgeyer@debian.org>  Thu, 28 May 2015 18:23:38 +0200
 

@@ -11,6 +11,7 @@ libutempter (1.1.6-1) UNRELEASED; urgency=medium
   * Improve package descriptions.
   * Retire utempter system group. (Closes: #698858, #545184)
     - Make /usr/lib/utempter root:root owned. (Closes: #698590)
+  * Bump Standards-Version to 3.9.6, no changes needed.
 
  -- Felix Geyer <fgeyer@debian.org>  Thu, 28 May 2015 18:23:38 +0200
 

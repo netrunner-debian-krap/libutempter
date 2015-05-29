@@ -7,7 +7,6 @@ libutempter (1.1.6-1) UNRELEASED; urgency=medium
     - Add Add keep_env_build_flags.diff
   * Add a watch file, thanks to David Gilman. (Closes: #747483)
   * Add Vcs-* control fields.
-  * Don't hardcode the delgroup path.
   * Improve package descriptions.
   * Retire utempter system group. (Closes: #698858, #545184)
     - Make /usr/lib/utempter root:root owned. (Closes: #698590)

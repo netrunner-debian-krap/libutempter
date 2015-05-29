@@ -1,23 +1,9 @@
 #!/bin/sh
-# postinst script for libutempter
 
 set -e
 
-case "$1" in
-    configure)
-        addgroup --quiet --system utempter
-        chown root:utempter /usr/lib/utempter
-    ;;
-
-    abort-upgrade|abort-remove|abort-deconfigure)
-    ;;
-
-    *)
-        echo "postinst called with unknown argument \`$1'" >&2
-        exit 1
-    ;;
-esac
-
 #DEBHELPER#
 
-exit 0
+if [ "$1" = "configure" ] && dpkg --compare-versions "$2" lt-nl "1.1.6-1~"; then
+    chown root:root /usr/lib/utempter
+fi

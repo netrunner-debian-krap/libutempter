@@ -1,0 +1,24 @@
+Description: Filter PIE flags when building the shared library.
+Author: Felix Geyer <fgeyer@debian.org>
+
+--- a/Makefile
++++ b/Makefile
+@@ -47,15 +47,15 @@
+ all: $(TARGETS)
+ 
+ %.os: %.c
+-	$(COMPILE.c) -fPIC $< $(OUTPUT_OPTION)
++	$(CC) $(CPPFLAGS) $(filter-out -fPIE,$(CFLAGS)) -c -fPIC $< $(OUTPUT_OPTION)
+ 
+ $(PROJECT): utempter.c
+ 	$(LINK.c) -Wl,-z,now,-stats $(LDLIBS) $< $(OUTPUT_OPTION)
+ 
+ $(SHAREDLIB): iface.os $(MAP)
+-	$(LINK.o) -shared \
++	$(CC) $(filter-out -fPIE -pie,$(LDFLAGS)) -shared \
+ 		-Wl,-soname,$(SONAME),--version-script=$(MAP),-z,defs,-stats \
+-		-lc $< $(OUTPUT_OPTION)
++		-lc $< $(OUTPUT_OPTION) $(LDLIBS)
+ 
+ $(STATICLIB): iface.o
+ 	$(AR) $(ARFLAGS) $@ $<

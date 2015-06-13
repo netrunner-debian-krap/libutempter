@@ -1,1 +1,2 @@
 keep_env_build_flags.diff
+filter_pie_shared_lib.diff

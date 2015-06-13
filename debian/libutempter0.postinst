@@ -5,5 +5,6 @@ set -e
 #DEBHELPER#
 
 if [ "$1" = "configure" ] && dpkg --compare-versions "$2" lt-nl "1.1.6-1~"; then
+    echo "The utempter system group isn't used anymore by this package"
     chown root:root /usr/lib/utempter
 fi

@@ -1,5 +1,6 @@
-libutempter (1.1.6-1) UNRELEASED; urgency=medium
+libutempter (1.1.6-1) unstable; urgency=medium
 
+  * Team upload.
   * New upstream release.
   * Switch to debhelper compat level 9.
     - Exports build flags.
@@ -15,7 +16,7 @@ libutempter (1.1.6-1) UNRELEASED; urgency=medium
     - Add filter_pie_shared_lib.diff so the PIE flags are filtered when
       building the shared library.
 
- -- Felix Geyer <fgeyer@debian.org>  Thu, 28 May 2015 18:23:38 +0200
+ -- Felix Geyer <fgeyer@debian.org>  Sat, 13 Jun 2015 16:56:04 +0200
 
 libutempter (1.1.5-4) unstable; urgency=low
 

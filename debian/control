@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.6
 Section: libs
 Homepage: http://git.altlinux.org/people/ldv/packages/?p=libutempter.git
-Vcs-Git: git://anonscm.debian.org/pkg-kde/krap/libutempter.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-kde/krap/libutempter.git
 Vcs-Browser: https://anonscm.debian.org/cgit/pkg-kde/krap/libutempter.git/
 
 Package: libutempter-dev

@@ -1,0 +1,15 @@
+Index: b/Makefile
+===================================================================
+--- a/Makefile
++++ b/Makefile
+@@ -30,8 +30,8 @@ MAP = lib$(PROJECT).map
+ TARGETS = $(PROJECT) $(SHAREDLIB) $(STATICLIB)
+ 
+ INSTALL = install
+-libdir = /usr/lib
+-libexecdir = /usr/lib
++libdir = /usr/lib/$(DEB_HOST_MULTIARCH)
++libexecdir = /usr/lib/$(DEB_HOST_MULTIARCH)
+ includedir = /usr/include
+ mandir = /usr/share/man
+ man3dir = $(mandir)/man3

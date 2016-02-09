@@ -5,7 +5,7 @@ Uploaders: Fathi Boudra <fabo@debian.org>
 Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.6
 Section: libs
-Homepage: http://freshmeat.net/projects/libutempter
+Homepage: http://git.altlinux.org/people/ldv/packages/?p=libutempter.git
 Vcs-Git: git://anonscm.debian.org/pkg-kde/krap/libutempter.git
 Vcs-Browser: https://anonscm.debian.org/cgit/pkg-kde/krap/libutempter.git/
 

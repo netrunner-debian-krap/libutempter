@@ -1,0 +1,2 @@
+# Avoid false positives in list-missing check
+usr/share/man/
